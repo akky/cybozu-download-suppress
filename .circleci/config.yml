@@ -47,13 +47,3 @@ jobs:
           path: test-reports/
           destination: hoge
 
-    stages:
-      deployment:
-        workDir: ~/repo
-        steps:
-          - type: deploy
-              name: "Deploy to production"
-              command: |
-                if [ "${CIRCLE_BRANCH}" == "master" ];
-                  then echo "deployed(dummy)"
-                fi
