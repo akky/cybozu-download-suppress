@@ -14,21 +14,29 @@ With this Chrome extension, when you try to download files on Cybozu services li
 $ yarn test
 ~~~
 
+The above command invokes Karma test runner. Karma auto-requires js modules (like as Chrome Extension env does) so test code can call them.
+
+Karma always comes with (headless) browser, which I do not use now. Test runner without client browser would fit better for this project but I could not find.
+
 ## lint and fix
 
 ~~~
 $ yarn lint
 ~~~
 
+This check source code statistically.
+
 ~~~
 $ yarn beautify
 ~~~
+
+This one fixes checked code.
 
 ## contribution
 
 ### site info
 
-Please change domains.js and send me a PR.
+Send me a PR.
 
 ### translation
 
@@ -37,6 +45,12 @@ Please add _locales/(your locale)/messages.json , then send me a PR.
 ## credit
 
 This extension is by MIT License
+
+## CI
+
+using CircleCI 2.0
+
+Packed extension zip would be uploaded on artifact section on the successful build.
 
 # ToDo-es
 

@@ -7,9 +7,10 @@
     "*.js"
   ],
   "scripts": {
-    "lint": "eslint ./*.js",
-    "beautify": "eslint --fix ./*.js",
-    "test": "karma start karma.conf.js"
+    "lint": "eslint scripts/*.js",
+    "beautify": "eslint --fix scripts/*.js",
+    "test": "karma start karma.conf.js",
+    "pack": "zip -r extension.zip scripts/*.js _locales icons/*.png"
   },
   "dependencies": {},
   "devDependencies": {

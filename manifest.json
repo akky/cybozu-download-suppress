@@ -12,7 +12,7 @@
     },
 
     "background": {
-      "scripts": ["domains.js", "tools.js", "background.js"]
+      "scripts": ["scripts/domains.js", "scripts/tools.js", "scripts/background.js"]
     },
 
     "permissions": [ "http://*/", "https://*/", "webRequest", "webRequestBlocking" ],

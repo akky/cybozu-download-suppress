@@ -3,6 +3,14 @@
 
 'use strict';
 
+function webResponseListener(details) {
+    return {
+        cancel: isCybozuServiceUrl(details.url)
+            && isCybozuDownloadUrl(details.url)
+            && isResponseDownload(details)
+    };
+}
+
 function parseUrl(url) {
     const parser = document.createElement('a');
     parser.href = url;

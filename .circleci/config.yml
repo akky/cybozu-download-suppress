@@ -48,7 +48,7 @@ jobs:
           name: Creating package
           command: |
             mkdir /tmp/artifacts;
-            zip -r /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip *.js _locales icons/*.png;
+            zip -r /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip scripts/*.js _locales icons/*.png;
 
       - store_artifacts:
           path: /tmp/artifacts
