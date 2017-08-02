@@ -10,19 +10,20 @@
     "lint": "eslint scripts/*.js",
     "beautify": "eslint --fix scripts/*.js",
     "test": "karma start karma.conf.js",
-    "pack": "zip -r extension.zip scripts/*.js _locales icons/*.png"
+    "pack": "zip -r extension.zip manifest.json scripts/*.js _locales icons/*.png"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "*",
     "babel-eslint": "*",
+    "chai": "*",
+    "chrome-webstore-upload-cli": "^1.1.1",
+    "eslint": "*",
     "karma": "*",
+    "karma-chai": "*",
     "karma-chrome-launcher": "*",
     "karma-coverage": "*",
     "karma-mocha": "*",
-    "karma-chai": "*",
-    "mocha": "^3.4.2",
-    "chai": "*"
+    "mocha": "^3.4.2"
   },
   "author": "Akky Akimoto",
   "license": "MIT",
