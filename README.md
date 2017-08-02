@@ -11,17 +11,17 @@ With this Chrome extension, when you try to download files on Cybozu services li
 ## unit test
 
 ~~~
-$ npm run test
+$ yarn test
 ~~~
 
 ## lint and fix
 
 ~~~
-$ npm run lint
+$ yarn lint
 ~~~
 
 ~~~
-$ npm run beautify
+$ yarn beautify
 ~~~
 
 ## contribution
@@ -44,8 +44,8 @@ This extension is by MIT License
 
 These are needed.
 
- $ npm run package
- $ npm run upload
+ $ yarn package
+ $ yarn upload
 
 ## ToDo: force install company-wide
 
