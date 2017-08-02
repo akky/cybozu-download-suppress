@@ -36,13 +36,22 @@ jobs:
       # run tests!
       - run: yarn test
 
+      - run:
+          name: Creating package
+          command: |
+            mkdir /tmp/artifacts;
+            zip -r /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip *.js _locales icons/*.png;
+
+      - store_artifacts:
+          path: /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip
+
     stages:
       deployment:
         workDir: ~/repo
         steps:
           - type: deploy
               name: "Deploy to production"
-            command: |
-              if [ "${CIRCLE_BRANCH}" == "master" ];
-                then zip chrome_extension_cybozu_suppress_download.zip *.js _locales icons/*.png
-              fi
+              command: |
+                if [ "${CIRCLE_BRANCH}" == "master" ];
+                  then echo "deployed(dummy)"
+                fi
