@@ -3,15 +3,15 @@ module.exports = function(config) {
         basePath: '',
         frameworks: ['mocha', 'chai'],
         files: [
-            'domains.js',
-            'tools.js',
+            'scripts/domains.js',
+            'scripts/tools.js',
             // 'background.js',   chrome object does not exist in text env. what should I do?
             'unittest/**/*.js'
         ],
         exclude: [
         ],
         preprocessors: {
-            './*.js': [ 'coverage' ]
+            'scripts/*.js': [ 'coverage' ]
         },
         reporters: [
             'progress',
