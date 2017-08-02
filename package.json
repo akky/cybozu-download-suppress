@@ -1,0 +1,32 @@
+{
+  "name": "cybozu-download-suppress",
+  "description": "Stop file download on specific Cybozu services",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "lint": "eslint ./*.js",
+    "beautify": "eslint --fix ./*.js",
+    "test": "karma start karma.conf.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-coverage": "*",
+    "karma-mocha": "*",
+    "karma-chai": "*",
+    "mocha": "^3.4.2",
+    "chai": "*"
+  },
+  "author": "Akky Akimoto",
+  "license": "MIT",
+  "main": "background.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}
