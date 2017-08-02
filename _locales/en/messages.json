@@ -1,0 +1,11 @@
+{
+    "ext_name": {
+        "message": "Cybozu Download Suppress"
+    },
+    "ext_desc": {
+         "message": "Refrain you from downloading files on Cybozu services when remotely accessed."
+    },
+    "unable_to_download_because_you_are_on_remote_access": {
+        "message": "(not used yet) you are not supposed to download files via remote access."
+    }
+}

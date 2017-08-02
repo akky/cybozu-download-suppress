@@ -1,0 +1,11 @@
+{
+    "ext_name": {
+        "message": "サイボウズダウンロード抑制"
+    },
+    "ext_desc": {
+         "message": "リモートアクセスドメインでのサイボウズサービスのファイルダウンロードを抑制します。"
+    },
+    "unable_to_download_because_you_are_on_remote_access": {
+         "message": "(未使用)リモートアクセスのため、ファイルのダウンロードはできません"
+    }
+}
