@@ -49,7 +49,7 @@ jobs:
           command: |
             mkdir /tmp/artifacts;
             zip -r /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip *.js _locales icons/*.png;
-            cp /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip $CIRCLE_ARTIFACTS;
+            cp /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip $CIRCLE_ARTIFACTS/chrome_extension_cybozu_suppress_download.zip
 
       - store_artifacts:
           path: test-reports/
