@@ -32,6 +32,12 @@ $ yarn beautify
 
 This one fixes checked code.
 
+## packaging
+
+~~~
+$ yarn pack
+~~~
+
 ## contribution
 
 ### site info
@@ -52,14 +58,23 @@ using CircleCI 2.0
 
 Packed extension zip would be uploaded on artifact section on the successful build.
 
+## deployment
+
+### Chrome Webstore API
+
+You need to register API and get keys manually.
+
+[How to](https://github.com/DrewML/chrome-webstore-upload/blob/master/How%20to%20generate%20Google%20API%20keys.md)
+
+create project: [webstore-publish]
+
+It is not really practical. Oauth call gives you refresh token but that works only in 3600 seconds. Oauth from CircleCI(or other tool) would be complecated.
+
+cf. [Is it possible to auto\-update a chrome extension published on the chrome web store? \- Stack Overflow](https://stackoverflow.com/questions/13139627/is-it-possible-to-auto-update-a-chrome-extension-published-on-the-chrome-web-sto/26754858)
+
+
 # ToDo-es
 
-## ToDo: packaging
-
-These are needed.
-
- $ yarn package
- $ yarn upload
 
 ## ToDo: force install company-wide
 
