@@ -18,10 +18,10 @@ module.exports = function(config) {
             'coverage'
         ],
         // report as an html file, or console text (I could not find a way to put both.)
-//        coverageReporter: {
-//            type: 'html',
-//            dir : 'coverage/'
-//        },
+        //        coverageReporter: {
+        //            type: 'html',
+        //            dir : 'coverage/'
+        //        },
         coverageReporter: {
             type: 'text'
         },
