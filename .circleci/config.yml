@@ -52,6 +52,7 @@ jobs:
 
       - store_artifacts:
           path: /tmp/artifacts
+<<<<<<< HEAD
 
       - run:
           name: Create Firefox package
@@ -63,3 +64,5 @@ jobs:
           name: Deploy Firefox
           command: |
             - web-ext sign --api-key $AMO_API_KEY --api-secret $AMO_API_SECRET
+=======
+>>>>>>> d932f202d688fab543053ef9c4bc2954af49e845
