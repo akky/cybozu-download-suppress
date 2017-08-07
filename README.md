@@ -72,18 +72,12 @@ It is not really practical. Oauth call gives you refresh token but that works on
 
 cf. [Is it possible to auto\-update a chrome extension published on the chrome web store? \- Stack Overflow](https://stackoverflow.com/questions/13139627/is-it-possible-to-auto-update-a-chrome-extension-published-on-the-chrome-web-sto/26754858)
 
-
-<<<<<<< HEAD
 ### Firefox
 
 [Build and Sign WebExtensions with CircleCI - mkelly\.me](http://www.mkelly.me/blog/build-and-sign-webextensions-with-circleci/)
 
 
 
-
-
-=======
->>>>>>> d932f202d688fab543053ef9c4bc2954af49e845
 # ToDo-es
 
 
