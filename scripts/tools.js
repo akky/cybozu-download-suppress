@@ -48,15 +48,9 @@ function isCybozuDownloadUrl(url) {
 
 function isResponseDownload(details) {
     for (let i = 0; i < details.responseHeaders.length; ++i) {
-<<<<<<< HEAD
     //alert(details.responseHeaders[i].name);
         // 'Content-Disposition' in Chrome, 'content-disposition' in Firefox
         if (details.responseHeaders[i].name.toLowerCase() === 'Content-Disposition'.toLowerCase()) {
-=======
-    //console.log(details.responseHeaders[i].name);
-    //alert(details.responseHeaders[i].name);
-        if (details.responseHeaders[i].name === 'Content-Disposition') {
->>>>>>> d932f202d688fab543053ef9c4bc2954af49e845
             const header_value = details.responseHeaders[i].value;
             //alert(header_value);
             if (header_value.indexOf('attachment;') > -1) {
