@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Added Chrome
+          name: Added library mainly for test (though browser test is not done. just for using Karma.)
           command: |
             sudo apt-get install -y libgconf2-4 libnss3-1d libxss1 libasound2 libatk1.0-0 libcups2 libgtk-3-0 libxcomposite1 libxcursor1 libxi6 libxrandr2 libxtst6 fonts-liberation libappindicator1 lsb-release xdg-utils
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
@@ -50,6 +50,7 @@ jobs:
           name: Create Chrome package
           command: |
             mkdir /tmp/artifacts;
+            mkdir /tmp/artifacts/chrome;
             zip -r /tmp/artifacts/chrome/cybozu_suppress_download.zip scripts/*.js _locales icons/*.png;
 
       - run:
