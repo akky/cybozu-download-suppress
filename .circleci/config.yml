@@ -56,10 +56,10 @@ jobs:
       - run:
           name: Create Firefox package
           command: |
-            web-ext build;
+            ./node_modules/web-ext/bin/web-ext build;
             mv web-ext-artifacts $CIRCLE_ARTIFACTS;
 
       - deploy:
           name: Deploy Firefox
           command: |
-            - web-ext sign --api-key $AMO_API_KEY --api-secret $AMO_API_SECRET
+            ./node_modules/web-ext/bin/web-ext sign --api-key $AMO_API_KEY --api-secret $AMO_API_SECRET;
