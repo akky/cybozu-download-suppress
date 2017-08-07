@@ -50,14 +50,14 @@ jobs:
             mkdir /tmp/artifacts;
             zip -r /tmp/artifacts/chrome_extension_cybozu_suppress_download.zip scripts/*.js _locales icons/*.png;
 
-      - store_artifacts:
-          path: /tmp/artifacts
-
       - run:
           name: Create Firefox package
           command: |
             ./node_modules/web-ext/bin/web-ext build;
-            mv web-ext-artifacts $CIRCLE_ARTIFACTS;
+            mv web-ext-artifacts /tmp/artifacts/;
+
+      - store_artifacts:
+          path: /tmp/artifacts
 
       - deploy:
           name: Deploy Firefox
