@@ -52,3 +52,14 @@ jobs:
 
       - store_artifacts:
           path: /tmp/artifacts
+
+      - run:
+          name: Create Firefox package
+          command: |
+            web-ext build;
+            mv web-ext-artifacts $CIRCLE_ARTIFACTS;
+
+      - deploy:
+          name: Deploy Firefox
+          command: |
+            - web-ext sign --api-key $AMO_API_KEY --api-secret $AMO_API_SECRET

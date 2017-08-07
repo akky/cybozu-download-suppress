@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "eslint scripts/*.js",
     "beautify": "eslint --fix scripts/*.js",
+    "check_firefox_compatibility": "wemf ./manifest.json --validate",
     "test": "karma start karma.conf.js",
     "pack": "zip -r extension.zip manifest.json scripts/*.js _locales icons/*.png"
   },
@@ -23,7 +24,8 @@
     "karma-chrome-launcher": "*",
     "karma-coverage": "*",
     "karma-mocha": "*",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "wemf": "^1.1.5"
   },
   "author": "Akky Akimoto",
   "license": "MIT",
